@@ -1,0 +1,398 @@
+:root {
+  --color1: #ffc221;
+  --color2: #081f51;
+  --color3: #f7f7f7;
+  --color4: #0071dc;
+  --color5: #081f51;
+  --color6: #193266;
+}
+a {
+  text-decoration: none;
+}
+.ilk {
+  padding: 0.8rem;
+  background-color: var(--color2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.unlem {
+  color: var(--color3);
+  font-weight: bold;
+}
+.cizgi {
+  color: var(--color3);
+  font-weight: bold;
+}
+.no {
+  color: var(--color3);
+  font-weight: bold;
+}
+.no::before {
+  font: var(--fa-font-solid);
+  content: "\f2a0";
+  padding: 0.5rem;
+  color: var(--color1);
+}
+.ilk-ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+.iki-ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+.egitim::before {
+  font: var(--fa-font-solid);
+  content: "\f007";
+  padding: 0.5rem;
+  color: var(--color1);
+}
+.egitim a {
+  color: var(--color3);
+  font-weight: bold;
+}
+.egitim a:hover {
+  color: var(--color1);
+}
+.linker {
+  color: var(--color3);
+}
+.linker:hover {
+  color: var(--color1);
+}
+.mm {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .ilk {
+    padding: 0.8rem;
+    background-color: var(--color2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 895px) {
+  .ilk {
+    padding: 0.8rem;
+    background-color: var(--color2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .ilk {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .ilk-ul {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .ilk-ul li:last-child {
+    text-align: center;
+  }
+  .iki-ul {
+    display: block;
+  }
+  .unlem {
+    text-align: center;
+  }
+}
+.navbar {
+  --bs-navbar-toggler-border-color: none;
+}
+.men-u {
+  background-color: var(--color3);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+section div.container-fluid img {
+  padding-left: 2rem;
+}
+main {
+  padding: 4rem;
+  background-color: var(--color2);
+}
+main div.card {
+  background-color: var(--color2);
+}
+main .card {
+  border: none !important;
+  border-radius: 0 !important;
+}
+main .container-fluid .row img {
+  margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  section.mama {
+    background-color: var(--color3);
+    padding: 4.7rem 1rem !important;
+  }
+}
+section.mama {
+  background-color: var(--color3);
+  padding: 4.7rem 5rem;
+}
+section.mama h2 {
+  color: var(--color4);
+  font-size: 18px;
+}
+section.mama p {
+  font-size: 18px;
+  text-align: center;
+  padding: 2rem 0;
+}
+section.mama img {
+  height: 273px;
+  position: relative;
+}
+section.mama a:hover .parlak {
+  opacity: 0.5;
+}
+.parlak {
+  background-color: var(--color5);
+  height: 273px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.arama {
+  background-color: var(--color4);
+  color: var(--color3);
+  border: 1px solid var(--color4) !important;
+  border-radius: 0 !important;
+}
+.arama:hover {
+  background-color: var(--color3);
+  color: var(--color4);
+  border: var(--color4);
+  outline: var(--color4);
+}
+.form-control {
+  border-radius: 0 !important;
+}
+.form-control:focus {
+  color: var(--color2);
+  background-color: var(--color3);
+  border-color: var(--color4);
+  outline: 0;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.isim h2 {
+  color: var(--color5) !important;
+  font-weight: bold;
+}
+.isim:hover .uzman {
+  color: var(--color4) !important;
+}
+.fiyat {
+  color: var(--color4) !important;
+}
+.fiyat:hover {
+  color: var(--color4) !important;
+}
+.alt-button {
+  margin-left: 0.5rem;
+  padding: 1rem;
+  background-color: var(--color4);
+  border-radius: 0 !important;
+  width: 13rem;
+  color: var(--color3);
+  transition: background-color 0.3s;
+}
+.alt-button:hover {
+  background-color: var(--color1);
+  color: var(--color5);
+}
+.alt-button::after {
+  font: var(--fa-font-solid);
+  content: "\f061";
+  padding-left: 0.5rem;
+}
+footer {
+  padding: 3rem 3rem;
+  background-color: var(--color2);
+}
+footer p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+footer input {
+  outline: none;
+  margin-bottom: 1rem;
+}
+footer button {
+  color: var(--color3);
+  background-color: var(--color4);
+  border: 0;
+}
+footer .parent {
+  position: relative;
+  display: inline-block;
+}
+footer .parent i {
+  cursor: pointer;
+  color: var(--color3);
+  padding: 0.42rem;
+  background-color: var(--color4);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-78%);
+  transition: background-color 0.3s;
+}
+footer i:hover {
+  color: var(--color2);
+  background-color: var(--color1);
+}
+footer .y ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer .y li a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: var(--color3);
+  font-weight: 600;
+  position: relative;
+  left: 0;
+  transition: left 0.5s;
+}
+footer .y li:last-child a {
+  margin-bottom: 1rem;
+}
+footer .y li a::before {
+  font: var(--fa-font-solid);
+  content: "\f101";
+  padding-right: 0.5rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+footer .y li {
+  position: relative;
+  right: 22.5px;
+}
+footer .y li a:hover {
+  color: var(--color4);
+  position: relative;
+  left: 15px;
+}
+footer .y li a:hover::before {
+  opacity: 1;
+}
+footer h2 {
+  margin-bottom: 2rem;
+}
+footer nav a {
+  display: list-item;
+  padding: 0.5rem 0;
+  color: var(--color3);
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer .ulas {
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+footer .alt-son li:first-child a::before {
+  font: var(--fa-font-solid);
+  content: "\f2a0";
+  padding-right: 0.5rem;
+  color: var(--color4);
+}
+footer .alt-son li:nth-child(2) a {
+  font-size: 14.4px;
+}
+footer .alt-son li:nth-child(2) a::before {
+  font: var(--fa-font-solid);
+  content: "\f658";
+  padding-right: 0.5rem;
+  color: var(--color4);
+}
+footer .alt-son li:nth-child(3) a {
+  pointer-events: none;
+}
+footer .alt-son li:nth-child(3) a::before {
+  font: var(--fa-font-solid);
+  content: "\f3c5";
+  padding-right: 0.5rem;
+  color: var(--color4);
+}
+.fake {
+  color: var(--color3);
+}
+.face {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  margin-right: 0.7rem;
+  margin-top: 0.5rem;
+  color: var(--color3);
+  background-color: var(--color6);
+  border-radius: 30px;
+}
+.face:hover {
+  background-color: var(--color4);
+}
+.fake:hover {
+  color: var(--color3);
+  background-color: var(--color4);
+}
+article {
+  padding: 1.5rem;
+  background-color: var(--color2);
+}
+article p {
+  margin: 0;
+  color: var(--color3);
+  font-weight: 600;
+}
+article a {
+  color: var(--color3);
+  font-size: 16px;
+  font-weight: 600;
+}
+article a:hover {
+  color: var(--color4);
+  text-decoration: underline;
+}
+hr {
+  margin: 0;
+}
+section.mama .card {
+  border: 0 !important;
+  background-color: white;
+}
+.ara {
+  margin-bottom: 0.3rem;
+}
